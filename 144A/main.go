@@ -56,10 +56,8 @@ func main(){
 	fmt.Scanf("%d\n", &n)
 
 	scanner := bufio.NewScanner(os.Stdin)
-	for scanner.Scan() {
-		s = scanner.Text()
-		break
-	}
+	scanner.Scan()
+	s = scanner.Text()
 
 	heights := strings.Fields(s)
 
